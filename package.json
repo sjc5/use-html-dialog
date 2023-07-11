@@ -12,7 +12,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sjc5/edit-this.git"
+    "url": "git+https://github.com/sjc5/use-html-dialog"
   },
   "keywords": [
     "dialog",
