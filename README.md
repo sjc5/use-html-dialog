@@ -11,7 +11,7 @@ npm i use-html-dialog
 ## Usage
 
 ```tsx
-const { props, close, showModal } = useHtmlDialog()
+const { showModal, props, close } = useHtmlDialog()
 
 return (
   <>

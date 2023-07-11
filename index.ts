@@ -28,11 +28,11 @@ function useHtmlDialog(
   }, [options])
 
   return {
+    ref,
     show,
     showModal,
     close,
     props,
-    ref,
   }
 }
 
