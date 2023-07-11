@@ -1,6 +1,8 @@
 import { useCallback, useMemo, useRef } from "react"
 
-function useHtmlDialog(options = { resetStyles: true }) {
+function useHtmlDialog(
+  options = { resetStyles: true, closeOnOutsideClick: true }
+) {
   const ref = useRef<HTMLDialogElement>(null)
   const show = useCallback(() => ref.current?.show(), [])
   const showModal = useCallback(() => ref.current?.showModal(), [])
@@ -16,6 +18,7 @@ function useHtmlDialog(options = { resetStyles: true }) {
       ref,
       style: options?.resetStyles ? styleReset : undefined,
       onClick: (e: React.MouseEvent<HTMLDialogElement, MouseEvent>) => {
+        if (!options?.closeOnOutsideClick) return
         if (e.target === ref.current) ref.current?.close()
       },
     }

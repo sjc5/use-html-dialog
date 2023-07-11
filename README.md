@@ -1,6 +1,6 @@
 # use-html-dialog
 
-Simple, tiny React hook wrapping the native HTML dialog element. Optionally resets user agent dialog styles. Supports normal and modal dialogs.
+Simple, tiny React hook wrapping the native HTML dialog element. Optionally resets user agent dialog styles and closes on backdrop click when used in modal mode.
 
 ## Installation
 
@@ -17,7 +17,7 @@ return (
   <>
     <button onClick={dialog.showModal}>Open</button>
 
-    <dialog {...dialogProps}>
+    <dialog {...dialog.props}>
       Yo!
       <button onClick={dialog.close}>Close</button>
     </dialog>
@@ -31,9 +31,10 @@ return (
 
 The hook takes an options object as an optional argument. The following options are available:
 
-| Option        | Type      | Default | Description                                        |
-| ------------- | --------- | ------- | -------------------------------------------------- |
-| `resetStyles` | `boolean` | `true`  | Whether to reset default user agent dialog styles. |
+| Option                | Type      | Default | Description                                                                                      |
+| --------------------- | --------- | ------- | ------------------------------------------------------------------------------------------------ |
+| `resetStyles`         | `boolean` | `true`  | Whether to reset default user agent dialog styles.                                               |
+| `closeOnOutsideClick` | `boolean` | `true`  | Whether to close the dialog when the backdrop is clicked. Only applies when `showModal` is used. |
 
 Example: `useHtmlDialog({ resetStyles: false })`
 
