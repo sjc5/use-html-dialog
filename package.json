@@ -1,10 +1,10 @@
 {
   "name": "use-html-dialog",
   "sideEffects": false,
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Sam Cook",
   "license": "MIT",
-  "description": "Simple, tiny React hook for interacting with native HTML dialog elements. Optionally resets user agent dialog styles and closes on backdrop click when used in modal mode.",
+  "description": "Simple, tiny React hook for working with native HTML dialogs. Optionally resets user agent dialog styles and closes on backdrop click when used in modal mode.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
