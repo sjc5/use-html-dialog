@@ -15,11 +15,11 @@ const { showModal, props, close } = useHtmlDialog()
 
 return (
   <>
-    <button onClick={showModal}>Open</button>
+    <button onClick={showModal}>Open modal</button>
 
     <dialog {...props}>
       This is a modal dialog.
-      <button onClick={close}>Close</button>
+      <button onClick={close}>Close modal</button>
     </dialog>
   </>
 )
@@ -27,7 +27,7 @@ return (
 
 ## API
 
-### Hook Props
+### Options
 
 The hook takes an options object as an optional argument. The following options are available:
 
@@ -36,7 +36,14 @@ The hook takes an options object as an optional argument. The following options 
 | `resetStyles`         | `boolean` | `true`  | Whether to reset default user agent dialog styles.                                               |
 | `closeOnOutsideClick` | `boolean` | `true`  | Whether to close the dialog when the backdrop is clicked. Only applies when `showModal` is used. |
 
-Example: `useHtmlDialog({ resetStyles: false })`
+#### Example:
+
+```tsx
+const dialog = useHtmlDialog({
+  resetStyles: false,
+  closeOnOutsideClick: false,
+})
+```
 
 ### Hook Return
 
