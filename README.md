@@ -1,6 +1,6 @@
 # use-html-dialog
 
-Simple, tiny React hook wrapping the native HTML dialog element. Optionally resets user agent dialog styles and closes on backdrop click when used in modal mode.
+Simple, tiny React hook for interacting with native HTML dialog elements. Optionally resets user agent dialog styles and closes on backdrop click when used in modal mode.
 
 ## Installation
 
