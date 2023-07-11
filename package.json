@@ -1,38 +1,40 @@
 {
-  "name": "use-html-dialog",
-  "sideEffects": false,
-  "version": "0.2.0",
-  "author": "Sam Cook",
-  "license": "MIT",
-  "description": "Simple, tiny React hook for working with native HTML dialogs. Optionally resets user agent dialog styles and closes on backdrop click when used in modal mode.",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sjc5/use-html-dialog"
-  },
-  "keywords": [
-    "dialog",
-    "modal",
-    "react",
-    "hook",
-    "html",
-    "native"
-  ],
-  "devDependencies": {
-    "@types/react": "^18.2.14",
-    "react": "^18.2.0",
-    "tsup": "^6.7.0",
-    "typescript": "^5.1.6"
-  },
-  "peerDependencies": {
-    "react": ">=16.8.0"
-  },
-  "scripts": {
-    "build": "tsup index.ts --format cjs,esm --dts"
-  }
+	"name": "use-html-dialog",
+	"sideEffects": false,
+	"version": "0.2.1",
+	"author": "Sam Cook",
+	"license": "MIT",
+	"description": "Simple, tiny React hook for working with native HTML dialogs. Optionally resets user agent dialog styles and closes on backdrop click when used in modal mode.",
+	"main": "dist/index.js",
+	"module": "dist/index.mjs",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sjc5/use-html-dialog"
+	},
+	"keywords": [
+		"dialog",
+		"modal",
+		"react",
+		"hook",
+		"html",
+		"native"
+	],
+	"devDependencies": {
+		"@remix-run/eslint-config": "^1.18.1",
+		"@types/react": "^18.2.14",
+		"eslint": "^8.44.0",
+		"react": "^18.2.0",
+		"tsup": "^6.7.0",
+		"typescript": "^5.1.6"
+	},
+	"peerDependencies": {
+		"react": ">=16.8.0"
+	},
+	"scripts": {
+		"build": "tsup index.ts --format cjs,esm --dts"
+	}
 }

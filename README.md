@@ -14,14 +14,14 @@ npm i use-html-dialog
 const { showModal, props, close } = useHtmlDialog()
 
 return (
-  <>
-    <button onClick={showModal}>Open modal</button>
+	<>
+		<button onClick={showModal}>Open modal</button>
 
-    <dialog {...props}>
-      This is a modal dialog.
-      <button onClick={close}>Close modal</button>
-    </dialog>
-  </>
+		<dialog {...props}>
+			This is a modal dialog.
+			<button onClick={close}>Close modal</button>
+		</dialog>
+	</>
 )
 ```
 
@@ -40,8 +40,8 @@ The hook takes an options object as an optional argument. The following options 
 
 ```tsx
 const dialog = useHtmlDialog({
-  resetStyles: false,
-  closeOnOutsideClick: false,
+	resetStyles: false,
+	closeOnOutsideClick: false,
 })
 ```
 
