@@ -28,12 +28,11 @@ function useHtmlDialog(
   }, [options])
 
   return {
-    ref,
     show,
     showModal,
     close,
     props,
-    isOpen: Boolean(ref.current?.open),
+    ref,
   }
 }
 

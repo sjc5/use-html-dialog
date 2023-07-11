@@ -48,7 +48,6 @@ The hook returns an object with the following properties:
 | `showModal` | `function` | Shows the dialog as a modal.                                         |
 | `close`     | `function` | Closes the dialog.                                                   |
 | `props`     | `object`   | Props to spread on the dialog element.                               |
-| `isOpen`    | `boolean`  | Whether the dialog is open.                                          |
 | `ref`       | `object`   | Ref to the dialog element, in case you need it (you probably don't). |
 
 ## License
