@@ -10,6 +10,7 @@ function useHtmlDialog(
   const show = useCallback(() => ref.current?.show(), [])
   const showModal = useCallback(() => ref.current?.showModal(), [])
   const close = useCallback(() => ref.current?.close(), [])
+  const isOpen = useMemo(() => Boolean(ref.current?.open), [])
 
   const props = useMemo(() => {
     const styleReset = {
@@ -27,7 +28,7 @@ function useHtmlDialog(
     }
   }, [options])
 
-  return { show, showModal, close, props }
+  return { ref, show, showModal, close, isOpen, props }
 }
 
 export { useHtmlDialog }

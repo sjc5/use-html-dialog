@@ -11,15 +11,15 @@ npm i use-html-dialog
 ## Usage
 
 ```tsx
-const dialog = useHtmlDialog()
+const { props, close, showModal } = useHtmlDialog()
 
 return (
   <>
-    <button onClick={dialog.showModal}>Open</button>
+    <button onClick={showModal}>Open</button>
 
-    <dialog {...dialog.props}>
-      Yo!
-      <button onClick={dialog.close}>Close</button>
+    <dialog {...props}>
+      This is a modal dialog.
+      <button onClick={close}>Close</button>
     </dialog>
   </>
 )
@@ -42,12 +42,14 @@ Example: `useHtmlDialog({ resetStyles: false })`
 
 The hook returns an object with the following properties:
 
-| Property    | Type       | Description                            |
-| ----------- | ---------- | -------------------------------------- |
-| `show`      | `function` | Shows the dialog.                      |
-| `showModal` | `function` | Shows the dialog as a modal.           |
-| `close`     | `function` | Closes the dialog.                     |
-| `props`     | `object`   | Props to spread on the dialog element. |
+| Property    | Type       | Description                                                          |
+| ----------- | ---------- | -------------------------------------------------------------------- |
+| `show`      | `function` | Shows the dialog.                                                    |
+| `showModal` | `function` | Shows the dialog as a modal.                                         |
+| `close`     | `function` | Closes the dialog.                                                   |
+| `props`     | `object`   | Props to spread on the dialog element.                               |
+| `isOpen`    | `boolean`  | Whether the dialog is open.                                          |
+| `ref`       | `object`   | Ref to the dialog element, in case you need it (you probably don't). |
 
 ## License
 
