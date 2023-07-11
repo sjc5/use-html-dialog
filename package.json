@@ -1,0 +1,37 @@
+{
+  "name": "use-html-dialog",
+  "version": "0.0.2",
+  "author": "Sam Cook",
+  "license": "MIT",
+  "description": "Simple, tiny React hook wrapping the native HTML dialog element. Optionally resets user agent dialog styles. Supports normal and modal dialogs.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sjc5/edit-this.git"
+  },
+  "keywords": [
+    "dialog",
+    "modal",
+    "react",
+    "hook",
+    "html",
+    "native"
+  ],
+  "devDependencies": {
+    "@types/react": "^18.2.14",
+    "react": "^18.2.0",
+    "tsup": "^6.7.0",
+    "typescript": "^5.1.6"
+  },
+  "peerDependencies": {
+    "react": "<=16.8.0"
+  },
+  "scripts": {
+    "build": "tsup index.ts --format cjs,esm --dts"
+  }
+}
